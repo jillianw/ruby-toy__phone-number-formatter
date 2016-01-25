@@ -3,7 +3,7 @@
 
 def format_phone_number(phone_number_str)
   b = phone_number_str
-  b.gsub(" ", "").gsub(".", "").gsub("-", "")
-  b = "(" + b[0..2] + ")" + " " + b[3..5] + "-" + b[6..9]
+  c = b.gsub(" ", "").gsub(".", "").gsub("-", "")
+  "(" + c[0..2] + ")" + " " + c[3..5] + "-" + c[6..9]
 end
   
