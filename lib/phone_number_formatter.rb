@@ -3,5 +3,5 @@
 
 def format_phone_number(phone_number_str)
   b = phone_number_str
-  b[0..2] + " " + b[3..5] + "-" + b[6..9]
+  b = "(" + b[0..2] + ")" + " " + b[3..5] + "-" + b[6..9]
 end
